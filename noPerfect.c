@@ -16,5 +16,5 @@ int main()
         printf("\n not perect No");
     return 0;
 }
-find Amstrong Number;
-paladrom number;
+// find Amstrong Number;
+// paladrom number;
