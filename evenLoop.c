@@ -1,28 +1,38 @@
+//-----Using for loop if else statement
 #include <stdio.h>
-int main(){
-    int n,i,sum=0;
+int main()
+{
+        int n, i, sum = 0;
 
-    printf("Enter the No :-");
-    scanf("%d",&n);
+        printf("Enter the No :-");
+        scanf("%d", &n);
 
-    // for(i=0;i<=n;i++){
-    //     if(n%2==0){
-    //         printf("Even no is %d",n);
-    //     }
-    //     else{
-    //         printf("Odd no is %d",n);
+        for (i = 0; i <= n; i++)
+        {
+                if (n % 2 == 0)
+                {
+                        printf("Even no is %d", n);
+                }
+                else
+                {
+                        printf("Odd no is %d", n);
+                }
+        }
+        //--------Using for loop for even no in simple step
+        for (i = 2; i <= n; i = i + 2)
+        {
+                printf("Even no is %d", i);
+        }
+        //---------using for loop for  odd no in simple step
+        for (i = 1; i <= n; i = i + 2)
+                printf("Odd no is %d", i);
+}
 
-    //     }
-    // }
+//------------Using for loop we add Even no
 
-    for(i=2;i<=n;i = i+2){
-            printf("Even no is %d",i);
-             sum = sum + i;
-
-    }
-            printf("\n total is  %d",sum);
-
-     for(i=1;i<=n;i = i+2)
-    printf("Odd no is %d",i);
-
-    }
+        for (i = 2; i <= n; i += 2)
+        {
+                printf("%d", i);
+                sum += i;
+        }
+        printf("%d", sum);
