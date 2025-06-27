@@ -36,3 +36,11 @@ int main()
                 sum += i;
         }
         printf("%d", sum);
+
+//----------Using for loop we add even no form 100 to 200
+
+        for (i=100;i<=200;i+=2){
+                printf("%d",i);
+                sum += i;
+        }
+        printf("%d",sum);
